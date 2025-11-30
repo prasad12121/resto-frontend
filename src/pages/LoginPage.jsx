@@ -1,6 +1,6 @@
-import { Card } from "@/components/ui/Card";
-import { Input } from "@/components/ui/Input";
-import { Button } from "@/components/ui/Button";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { loginUser } from "../api/auth/authApi";
 import { Link } from "react-router-dom"; // <-- import Link
