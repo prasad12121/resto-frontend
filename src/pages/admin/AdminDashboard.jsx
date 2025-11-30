@@ -20,15 +20,12 @@ export default function AdminDashboard() {
   const loadStats = async () => {
     try {
       const orders = await getOrders();
-      console.log(orders);
       const products = await getProducts();
       const users = await getAllUsers();
 
       const revenue = orders
         .filter((o) => o.status === "Completed")
         .reduce((sum, o) => sum + o.subtotal, 0);
-
-        console.log(revenue);
 
       const pendingOrders = orders.filter(
         (o) => o.status === "Pending"

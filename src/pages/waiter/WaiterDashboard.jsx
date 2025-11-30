@@ -28,7 +28,6 @@ export default function WaiterDashboard() {
       setLoadingTables(true);
       try {
         const data = await getTables();
-        console.log("Table response=", data);
         setTables(data || []);
       } catch (err) {
         console.error("Failed to load tables:", err);

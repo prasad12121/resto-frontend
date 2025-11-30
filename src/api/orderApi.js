@@ -49,7 +49,6 @@ export const updateOrderItem = async (orderId, itemId, updatedData) => {
 export const getOrderByTable = async (tableId) => {
   try {
     const res = await axios.get(`${API_URL}/table/${tableId}`);
-    console.log(res);
     return res.data;
   } catch (err) {
     console.log("getOrderByTable error:", err);
@@ -61,7 +60,6 @@ export const getOrderByTable = async (tableId) => {
 export const finalizeOrder = async (orderId) => {
   try {
     const res = await axios.put(`${API_URL}/finalize/${orderId}`);
-    console.log(res);
     return res.data;
   } catch (err) {
     console.error("finalizeOrder error:", err);

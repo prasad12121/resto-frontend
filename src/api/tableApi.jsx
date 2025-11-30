@@ -4,11 +4,8 @@ import axios from "axios";
 
 const API_URL_TABLE = import.meta.env.VITE_API_URL;
 
-console.log("test1:",API_URL_TABLE);//test1: https://resto-backend-nine.vercel.app
-
 const API_URL= `${API_URL_TABLE}/api/tables`;
 
-console.log("test1:",API_URL);
 export const getTables = async () => {
   const res = await axios.get(API_URL);
   return res.data;

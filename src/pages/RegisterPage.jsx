@@ -17,7 +17,6 @@ export const RegisterPage = () => {
     e.preventDefault();
     try {
       const res = await registerUser(form);
-      console.log(res); // handle register success/failure
       setForm({ name: "", email: "", password: "" });
         navigate("/");
         toast.success("Registration successful!", {

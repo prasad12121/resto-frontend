@@ -16,7 +16,6 @@ export const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await loginUser(form);
-    console.log("LOGIN RESPONSE:", res); // ← check frontend response
     if (res?.token) {
       login(res); // Will redirect based on role
    
