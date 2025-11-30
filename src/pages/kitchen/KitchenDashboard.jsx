@@ -60,7 +60,7 @@ const KitchenDashboard = () => {
   return (
     <DashboardLayout>
       <div className="p-6">
-        <h1 className="text-3xl font-bold mb-6">Kitchen Dashboard</h1>
+        <h1 className="text-3xl font-bold mb-6">Kitchen Dashboard KOT</h1>
 
         {orders.length === 0 && (
           <p className="text-center text-gray-500 mt-20 text-lg">
