@@ -11,17 +11,14 @@ const DashboardLayout = ({ children }) => {
 
       <Sidebar isOpen={open} onClose={() => setOpen(false)} />
 
-    
-        {/* MAIN CONTENT */}
-        <main
-          className="
-            flex-1 p-4 
-            mt-14
-            md:ml-64  
+      {/* MAIN CONTENT */}
+      <main
+        className="
+         flex-1 p-4 pt-[100px] md:ml-64 
           "
-        >
-          {children}
-        </main>
+      >
+        {children}
+      </main>
     </div>
   );
 };

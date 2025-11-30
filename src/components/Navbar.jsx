@@ -8,6 +8,7 @@ const Navbar = () => {
   if (!user) return null; // hide navbar when logged OUT (login/register page)
 
   return (
+      
     <nav className="w-full bg-primary text-primary-foreground px-6 py-3 flex justify-between items-center shadow-md">
       <h1 className="text-xl font-bold">🍽 Restaurant System</h1>
 
@@ -22,7 +23,9 @@ const Navbar = () => {
         </Button>
       </div>
     </nav>
+      
   );
 };
 
 export default Navbar;
+

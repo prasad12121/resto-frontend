@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getOrders, updateOrderStatus } from "@/api/orderApi";
 import DashboardLayout from "../../components/layouts/DashboardLayout";
-//import socket from "../../socket";
+import socket from "../../socket";
 
 const statusOptions = ["Pending", "Preparing", "Ready", "Served"];
 
