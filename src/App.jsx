@@ -12,7 +12,7 @@ import AdminDashboard from "./pages/admin/AdminDashboard.jsx";
 import WaiterDashboard from "./pages/waiter/WaiterDashboard";
 import KitchenDashboard from "./pages/kitchen/KitchenDashboard.jsx";
 import PublicRoute from "./routes/PublicRoute.jsx";
-import Navbar from "./components/Navbar.jsx";
+//import Navbar from "./components/Navbar.jsx";
 import TakeOrder from "./pages/waiter/TakeOrder.jsx";
 import WaiterTables from "./pages/waiter/WaiterTables.jsx";
 import AdminProducts from "./pages/admin/AdminProducts.jsx";
@@ -24,7 +24,8 @@ import KitchenCompletedOrder from "./pages/kitchen/KitchenCompletedOrders.jsx";
 // Optional: ProtectedRoute for future dashboards
 const ProtectedRoute = ({ children, role }) => {
   // Example: get role from localStorage or context
-  const userRole = localStorage.getItem("role");
+  const userRole = localStorage.getItem("role") || "";
+
   if (!userRole || (role && userRole !== role)) {
     return <Navigate to="/login" replace />;
   }
@@ -38,7 +39,6 @@ function App() {
       <Router>
         <AuthProvider>
           {/* Global Navbar */}
-          <Navbar />
 
           <Routes>
             <Route

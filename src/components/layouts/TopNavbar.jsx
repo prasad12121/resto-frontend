@@ -1,5 +1,4 @@
 import { useAuth } from "@/context/AuthContext";
-import { useState } from "react";
 import { Menu } from "lucide-react";
 
 const TopNavbar = ({ onMenuToggle }) => {
@@ -13,14 +12,14 @@ const TopNavbar = ({ onMenuToggle }) => {
         <Menu size={26} />
       </button>
 
-      <h1 className="text-xl font-semibold">Restaurant App</h1>
+      <h1 className="text-xl font-semibold">Splash Mount</h1>
 
-      <div className="hidden md:flex items-center gap-4">
+      <div className="md:flex items-letf gap-4">
         <span className="text-gray-300">Role: {user?.role}</span>
 
         <button
           onClick={logout}
-          className="bg-red-600 px-4 py-1 rounded hover:bg-red-700"
+          className="bg-red-600 ml-1 px-4 py-1 rounded hover:bg-red-700"
         >
           Logout
         </button>
