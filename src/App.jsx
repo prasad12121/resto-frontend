@@ -12,7 +12,6 @@ import AdminDashboard from "./pages/admin/AdminDashboard.jsx";
 import WaiterDashboard from "./pages/waiter/WaiterDashboard";
 import KitchenDashboard from "./pages/kitchen/KitchenDashboard.jsx";
 import PublicRoute from "./routes/PublicRoute.jsx";
-//import Navbar from "./components/Navbar.jsx";
 import TakeOrder from "./pages/waiter/TakeOrder.jsx";
 import WaiterTables from "./pages/waiter/WaiterTables.jsx";
 import AdminProducts from "./pages/admin/AdminProducts.jsx";
